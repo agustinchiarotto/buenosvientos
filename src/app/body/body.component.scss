@@ -1,0 +1,57 @@
+h1{
+font-family:'Montserrat-SemiBold';
+color: white;
+font-size:5.2vw;
+letter-spacing: 15px;
+margin-left: -1%;
+margin-bottom: -3%; 
+}
+
+h2{
+    font-family:'Montserrat-SemiBold';
+    color: white;
+    font-size:3.1vw;
+    letter-spacing: 10px;
+    margin-left: -0.5%;
+    margin-bottom:-1%
+}
+
+h5{
+    font-family:'Montserrat-SemiBold';
+    color: white;
+    font-size:1.4vw;
+    line-height: 1.3;
+    margin-top: -14%;
+   
+}
+
+.row{
+    padding-top: 15%;
+}
+
+.margenCol{
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.margenlCol2{
+    margin-left: -25%;
+}
+
+.delay-medio{
+    animation-delay: 0.5s;
+}
+.delay-1-5s{
+    animation-delay: 1.5s;
+}
+
+.carousel-content {
+    position: absolute;
+    bottom: 28%;
+    left: 57%;
+    z-index: 20;
+    color: white;
+    letter-spacing: 6px;
+    
+    font-family:'Montserrat-SemiBold';
+  }

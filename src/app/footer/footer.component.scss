@@ -1,0 +1,589 @@
+    .footer3 {
+        background: url("../../assets/imagenes/footer/fondo_footer-01.jpg");
+        //  background-size: cover;
+        // background-color: black;
+        background-repeat: no-repeat;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+    
+    .paddgeneral {
+        padding: 5%;
+    }
+    
+    .margenCompu {
+        margin-left: 4%;
+    }
+    
+    .chico {
+        padding-top: 10%;
+    }
+    
+    .margenChico {
+        margin-top: 13%;
+    }
+    
+    .margenGrande {
+        margin-top: 20%;
+    }
+    
+    @-webkit-keyframes flipInY {
+        from {
+            -webkit-transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
+            transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
+            -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+            opacity: 0;
+        }
+        40% {
+            -webkit-transform: perspective(400px) rotate3d(0, 1, 0, -20deg);
+            transform: perspective(400px) rotate3d(0, 1, 0, -20deg);
+            -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+        }
+        60% {
+            -webkit-transform: perspective(400px) rotate3d(0, 1, 0, 10deg);
+            transform: perspective(400px) rotate3d(0, 1, 0, 10deg);
+            opacity: 1;
+        }
+        80% {
+            -webkit-transform: perspective(400px) rotate3d(0, 1, 0, -5deg);
+            transform: perspective(400px) rotate3d(0, 1, 0, -5deg);
+        }
+        to {
+            -webkit-transform: perspective(400px);
+            transform: perspective(400px);
+        }
+    }
+    
+    @keyframes flipInY {
+        from {
+            -webkit-transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
+            transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
+            -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+            opacity: 0;
+        }
+        40% {
+            -webkit-transform: perspective(400px) rotate3d(0, 1, 0, -20deg);
+            transform: perspective(400px) rotate3d(0, 1, 0, -20deg);
+            -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+        }
+        60% {
+            -webkit-transform: perspective(400px) rotate3d(0, 1, 0, 10deg);
+            transform: perspective(400px) rotate3d(0, 1, 0, 10deg);
+            opacity: 1;
+        }
+        80% {
+            -webkit-transform: perspective(400px) rotate3d(0, 1, 0, -5deg);
+            transform: perspective(400px) rotate3d(0, 1, 0, -5deg);
+        }
+        to {
+            -webkit-transform: perspective(400px);
+            transform: perspective(400px);
+        }
+    }
+    
+    .flipInY {
+        -webkit-backface-visibility: visible !important;
+        backface-visibility: visible !important;
+        -webkit-animation-name: flipInY;
+        animation-name: flipInY;
+    }
+    
+    @-webkit-keyframes flipOutX {
+        from {
+            -webkit-transform: perspective(400px);
+            transform: perspective(400px);
+        }
+        30% {
+            -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+            transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+            opacity: 1;
+        }
+        to {
+            -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+            transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+            opacity: 0;
+        }
+    }
+    
+    @keyframes flipOutX {
+        from {
+            -webkit-transform: perspective(400px);
+            transform: perspective(400px);
+        }
+        30% {
+            -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+            transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+            opacity: 1;
+        }
+        to {
+            -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+            transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+            opacity: 0;
+        }
+    }
+    
+    .img {
+        -webkit-animation: fadein 2s;
+        /* Safari, Chrome and Opera > 12.1 */
+        -moz-animation: fadein 2s;
+        /* Firefox < 16 */
+        -ms-animation: fadein 2s;
+        /* Internet Explorer */
+        -o-animation: fadein 2s;
+        /* Opera < 12.1 */
+        animation: fadein 2s;
+    }
+    
+    @keyframes fadein {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+    
+    .footer2 {
+        background-color: black;
+    }
+    
+    .texto1 {
+        color: white;
+        font-family: "Montserrat-Regular";
+        font-size: 20px;
+    }
+    
+    p {
+        color: white;
+        font-family: "Montserrat-Black";
+        font-size: 20px;
+    }
+    
+    h2 {
+        color: white;
+    }
+    
+    h5 {
+        color: white;
+        text-align: left;
+        font-family: "Montserrat-Regular";
+        font-size: 13px;
+    }
+    
+    .seguinos {
+        font-size: 24px;
+    }
+    
+    .pt-10 {
+        padding-top: 20vh;
+    }
+    
+    .pl-10 {
+        padding-left: 5vw;
+    }
+    
+    img:hover {
+        //  box-shadow: 10px 10px 5px #000000;
+    }
+    
+    @media only screen and (max-width: 1920px) {
+        .offset-md-4 {
+            margin-left: 11%;
+        }
+        .pantgrande {
+            padding-right: 0%;
+            padding-left: 11%;
+        }
+        .face {
+            padding-left: 7%;
+        }
+        .insta {
+            padding-left: 0%;
+            padding-right: 6%;
+            margin-top: 0vh;
+        }
+    }
+
+    
+    @media only screen and (max-width: 1444px) {
+        .pantgrande {
+            padding-right: 0%;
+            padding-left: 6%;
+        }
+        .offset-md-4 {
+            margin-left: 15.333333%;
+        }
+        .footer3 {
+            background: url("../../assets/imagenes/footer/fondo_footer-01.jpg");
+            //background: url("../../assets/imagenes/footerweb-07.png");
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-color: rgb(42, 29, 22);
+        }
+        .footer2 {
+            background-color: black;
+        }
+        p {
+            color: white;
+            font-family: "Montserrat-Black";
+            font-size: 20px;
+        }
+        h2 {
+            color: white;
+        }
+        h5 {
+            color: white;
+            text-align: left;
+            font-family: "Montserrat-Regular";
+            font-size: 15px;
+        }
+        .comunicate {
+            padding-left: 7%;
+            padding-right: 0%
+        }
+        .seguinos {
+            text-align: start;
+            padding-left: 8.5vh;
+            font-size: 24px;
+            padding-top: 15%;
+        }
+        .face {
+            padding-left: 4%;
+        }
+        .insta {
+            padding-left: 1.5%;
+            margin-top: 0vh;
+        }
+        .pantchico {
+            padding-right: 0%;
+        }
+        .rioN {
+            margin-top: -5%;
+        }
+        .pt-especial {
+            padding-top: 17%;
+        }
+        .pt-10 {
+            padding-top: 0vh;
+        }
+        .pl-10 {
+            padding-left: 5vw;
+        }
+        img:hover {
+            //  box-shadow: 10px 10px 5px #000000;
+        }
+        .margenCompu {
+            margin-left: 0%;
+        }
+        .chico {
+            padding-top: 17%;
+        }
+        .margenChico {
+            margin-top: 13%;
+        }
+        .margenGrande {
+            margin-top: 20%;
+        }
+    }
+    
+    .primerRow {
+        margin-top: 20%;
+    }
+    
+    @media only screen and (max-width: 1024px) {
+        .col,
+        .col-1,
+        .col-10,
+        .col-11,
+        .col-12,
+        .col-2,
+        .col-3,
+        .col-4,
+        .col-5,
+        .col-6,
+        .col-7,
+        .col-8,
+        .col-9,
+        .col-auto,
+        .col-lg,
+        .col-lg-1,
+        .col-lg-10,
+        .col-lg-11,
+        .col-lg-12,
+        .col-lg-2,
+        .col-lg-3,
+        .col-lg-4,
+        .col-lg-5,
+        .col-lg-6,
+        .col-lg-7,
+        .col-lg-8,
+        .col-lg-9,
+        .col-lg-auto,
+        .col-md,
+        .col-md-1,
+        .col-md-10,
+        .col-md-11,
+        .col-md-12,
+        .col-md-2,
+        .col-md-3,
+        .col-md-4,
+        .col-md-5,
+        .col-md-6,
+        .col-md-7,
+        .col-md-8,
+        .col-md-9,
+        .col-md-auto,
+        .col-sm,
+        .col-sm-1,
+        .col-sm-10,
+        .col-sm-11,
+        .col-sm-12,
+        .col-sm-2,
+        .col-sm-3,
+        .col-sm-4,
+        .col-sm-5,
+        .col-sm-6,
+        .col-sm-7,
+        .col-sm-8,
+        .col-sm-9,
+        .col-sm-auto,
+        .col-xl,
+        .col-xl-1,
+        .col-xl-10,
+        .col-xl-11,
+        .col-xl-12,
+        .col-xl-2,
+        .col-xl-3,
+        .col-xl-4,
+        .col-xl-5,
+        .col-xl-6,
+        .col-xl-7,
+        .col-xl-8,
+        .col-xl-9,
+        .col-xl-auto {
+            padding-right: 0px;
+            padding-left: 0px;
+        }
+        .rioN {
+            margin-top: -5%;
+        }
+        .margenCompu {
+            margin-left: 0%;
+        }
+        .chico {
+            padding-top: 10%;
+        }
+        .margenChico {
+            margin-top: 13%;
+        }
+        .margenGrande {
+            margin-top: 20%;
+        }
+        .row {
+            margin-left: 0%;
+            margin-right: 0%;
+        }
+        .comu {
+            padding-left: 0vh;
+        }
+        .comunicate {
+            text-align: start;
+            padding-left: 1.5vh;
+        }
+        .face {
+            padding-left: 2vh;
+        }
+        .insta {
+            padding-left: 2.5vh;
+            margin-top: 0vh;
+        }
+        .seguinos {
+            text-align: start;
+            padding-left: 5.5vh;
+            font-size: 22px;
+            padding-top: 26%;
+        }
+        .footer3 {
+            background: url("../../assets/imagenes/footer/fondo_footer-01.jpg");
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-color: rgb(42, 29, 22);
+        }
+        .footer2 {
+            background-color: black;
+        }
+        p {
+            color: white;
+            font-family: "Montserrat-Black";
+            font-size: 16px;
+            margin-top: 15%;
+        }
+        h2 {
+            color: white;
+        }
+        h5 {
+            color: white;
+            text-align: left;
+            font-family: "Montserrat-Regular";
+            font-size: 12px;
+        }
+        .pt-10 {
+            padding-top: 0vh;
+        }
+        .pl-10 {
+            margin-left: 0vh;
+        }
+        .pt-especial {
+            padding-top: 36%;
+        }
+        img:hover {
+            // box-shadow: 10px 10px 5px #000000;
+        }
+        .texto1 {
+            color: white;
+            font-family: "Montserrat-Regular";
+            font-size: 15px;
+        }
+    }
+    
+    @media only screen and (max-width: 812px) {
+        .row {
+            margin-left: 0%;
+            margin-right: 0%;
+        }
+        .comu {
+            padding-left: 1.5vh;
+        }
+        .comunicate {
+            text-align: start;
+            padding-left: 1.5vh;
+        }
+        .face {
+            padding-left: 3vh;
+        }
+        .insta {
+            padding-left: 3vh;
+            margin-top: 1.5vh;
+        }
+        .seguinos {
+            text-align: start;
+            padding-left: 2.5vh;
+        }
+        .footer3 {
+            background: none; //url("../../assets/imagenes/footerweb-07.png");
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-color: rgb(43, 34, 28);
+        }
+        .footer2 {
+            background-color: black;
+        }
+        p {
+            color: white;
+            font-family: "Montserrat-Black";
+            font-size: 17px;
+        }
+        h2 {
+            color: white;
+        }
+        h5 {
+            color: white;
+            text-align: left;
+            font-family: "Montserrat-Regular";
+            font-size: 10px;
+        }
+        .pt-10 {
+            padding-top: 0vh;
+        }
+        .pl-10 {
+            margin-left: 0vh;
+        }
+        img:hover {
+            //  box-shadow: 10px 10px 5px #000000;
+        }
+    }
+    
+    @media only screen and (max-width: 415px) and (orientation: portrait) {
+        .paddgeneral {
+            padding: 13%;
+        }
+        .row {
+            margin-left: 0%;
+            margin-right: 0%;
+        }
+        .comu {
+            padding-left: 0vh;
+        }
+        .comunicate {
+            text-align: start;
+            padding-left: 0vh;
+            margin-top: 41%;
+        }
+        .seguinos {
+            font-size: 17px;
+            padding-top: 0%;
+        }
+        .nosotros {
+            margin-top: -16%;
+        }
+        .face {
+            padding-left: 1vh;
+        }
+        .insta {
+            padding-left: 4.5vh;
+            margin-top: 0vh;
+        }
+        .seguinos {
+            text-align: start;
+            padding-left: 2.5vh;
+            margin-top: -3%;
+        }
+        .footer3 {
+            background: url("../../assets/imagenes/footer/fondo_footer-01.jpg");
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-color: rgb(42, 29, 22);
+        }
+        .footer2 {
+            background-color: black;
+        }
+        p {
+            color: white;
+            font-family: "Montserrat-Black";
+            font-size: 17px;
+            /*  padding-top: 0%; */
+        }
+        h2 {
+            color: white;
+        }
+        h5 {
+            color: white;
+            text-align: left;
+            font-family: "Montserrat-Regular";
+            font-size: 12px;
+            margin-bottom: 0%;
+            margin-top: 0%;
+            margin-left: 3%;
+        }
+        .pt-10 {
+            padding-top: 0vh;
+        }
+        .pl-10 {
+            margin-left: 0vh;
+        }
+        img:hover {
+            // box-shadow: 10px 10px 5px #000000;
+        }
+    }
+    
+    .pl-10 {
+        padding-left: 5vw;
+    }
+    
+    img:hover {
+        // box-shadow: 10px 10px 5px #000000;
+    }

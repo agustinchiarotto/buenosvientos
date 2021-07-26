@@ -1,0 +1,77 @@
+
+<nav [@hamburTrigger]="armado ? 'armado' : 'normal'" class="navbar   top-nav-collapse  navbar-ligth bg-ligth mont" id="header" [ngClass]="{'hambur fixed-top':hamburguesa,'navbar-expand-lg ':!hamburguesa  }"
+(mouseenter) ="mouseEnter()"  (mouseleave) ="mouseLeave()">
+ 
+ 
+ <!-- [ngClass]="{'hambur':hamburguesa}"  -->
+ 
+  <a class="navbar-brand" href="#">
+    <img src="{{ruta}}"
+    [ngClass]="{'padLeft':movil}"
+    [ngStyle]="{'heigth':hamburguesa &&!movil ? '' :'75%', 'width':hamburguesa && !movil ? '':'75%', 'margin-left':hamburguesa && !movil ? '40vw':'0%', 'transition':hamburguesa ? '1.5s':'0.5s'}"
+    [ngStyle]="{'heigth':hamburguesa && movil ? '' :'40%', 'width':hamburguesa && movil ? '':'40%', 'margin-left':hamburguesa && movil ? '50vw':'0%', 'transition':hamburguesa ? '1.5s':'0.5s'}"
+    [ngStyle]="{'margin-left':movil ? '-5%':'0%', 'transition':hamburguesa ? '1.5s':'1s'}"
+    alt="logoBV">
+  </a>
+  <button class="navbar-toggler navbar-light " type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
+ 
+     style="position: absolute;
+ " 
+      [ngStyle]="{'right': !movil ? 'inherit':''}"> 
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent" 
+    [ngStyle]="{'margin-left': !hamburguesa && !movil ? '30%':'10%'}">
+   
+    <ul class="navbar-nav mr-auto">
+     
+      <li class="nav-item dropdown">
+          <hr class=" mb-2"  [ngStyle]="{'display':hamburguesa ? 'none' :'block'}" [ngClass]="{'amarillo':!movil}">
+        <a class="nav-link dropdown-toggle " href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"  routerLinkActive="active">
+          PRODUCTOS
+        </a>
+        <div class="dropdown-menu animate slideIn" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#dulces">Dulces</a>
+          <a class="dropdown-item" href="#salados" >Salados</a>
+          <a class="dropdown-item" href="#naturales" >Naturales</a>
+          <a class="dropdown-item" href="#productos" >Todos</a>
+          
+        </div>
+      </li>
+ 
+      <li class="nav-item">
+          <hr class="mb-2" [ngStyle]="{'display':hamburguesa ? 'none' :'block'}"  [ngClass]="{'verde':!movil}">
+        <a class="nav-link" href="#nosotros"    routerLinkActive="active" >NOSOTROS</a>
+      </li>
+      <li class="nav-item">
+          <hr class=" mb-2" [ngStyle]="{'display':hamburguesa ? 'none' :'block'}" [ngClass]="{'celeste':!movil}">
+        <a class="nav-link" href="#contacto"   routerLinkActive="active" >CONTACTO</a>
+      </li>
+      <li class="nav-item">
+        <hr class=" mb-2" [ngStyle]="{'display':hamburguesa ? 'none' :'block'}" [ngClass]="{'naranja':!movil}">
+      <a class="nav-link" href="#recetas"   routerLinkActive="active" >RECETAS</a>
+    </li>
+    
+    <!--   <li  class="nav-item" [ngStyle]="{'display':hamburguesa ? 'none' :'block'}" >
+
+
+          <hr class=" mb-2" [ngStyle]="{'display':hamburguesa ? 'none' :'block'}" [ngClass]="{'naranja':!movil}">
+          <form class="form-inline">
+    
+            <input class="form-control" name="busqueda" type="search" placeholder="Busqueda" aria-label="Search" style="max-width: 50%;margin-top: -8%;" [ngStyle]="{'display':hamburguesa ? 'none' :'block'}" 
+            [(ngModel)]="model.busqueda" required
+            autocomplete="false"
+            autofocus="false"
+            (submit)="buscar()"
+            (keydown.enter)="buscar()">        
+          </form>
+
+      </li> -->
+
+    </ul>
+
+ 
+  </div>
+</nav>
+
+

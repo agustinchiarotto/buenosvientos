@@ -1,0 +1,235 @@
+    /* equal card height */
+    
+    .resetas-section {
+        padding-top: 10vw;
+        padding-bottom: 5vw;
+        margin-bottom: 5vw;
+        background-size: cover;
+        background-image: url('src/assets/imagenes/Madera_BV.jpg');
+    }
+    
+    .reloj {
+        padding-left: 20%;
+    }
+    
+    .gorro {
+        padding-left: 30%;
+        font-size: 10px;
+    }
+    
+    .gorro2 {
+        padding-left: 35%;
+    }
+    
+    .verTodas {
+        width: 10vw;
+        background-color: #87CFBE;
+    }
+    
+    .verTodas {
+        width: 10vw;
+        background-color: #87CFBE;
+    }
+    
+    .anchor {
+        display: block;
+        height: 15vw;
+        /*same height as header*/
+        margin-top: -15vw;
+        /*same height as header*/
+        visibility: hidden;
+    }
+    
+    .card {
+        width: 80% !important;
+    }
+    
+    .tituloTexto {
+        padding-top: 1.6%;
+        line-height: 20px;
+        font-family: "Montserrat-SemiBold";
+        font-size: 50px;
+        color: rgb(255, 255, 255);
+    }
+    
+    .texto1 {
+        // margin-top: 5%;
+        font-family: "Montserrat-SemiBold";
+        font-size: 22px;
+        color: rgb(255, 255, 255);
+    }
+    
+    .texto2 {
+        // margin-top: 7%;
+        font-family: "Montserrat-Light";
+        font-size: 18px;
+        color: rgb(255, 255, 255);
+    }
+    
+    .verTodo {
+        font-family: "Montserrat-SemiBold";
+        font-size: 12px;
+        line-height: 30px;
+    }
+    
+    .tiempo {
+        text-align: center;
+    }
+    
+    .coccion {
+        text-align: end;
+    }
+    
+    .carousel-control.left,
+    .carousel-control.right {
+        left: 0;
+        z-index: 1;
+    }
+    
+    .col-6 {
+        max-height: 365px;
+    }
+    
+    img {
+        max-height: 225px;
+    }
+    
+    h5 {
+        font-family: "Montserrat-SemiBold";
+        font-size: medium;
+    }
+    
+    p {
+        font-size: 11px;
+        font-family: "Montserrat-Light";
+    }
+
+    @media screen and (max-width: 1370px) {
+        .gorro {
+            padding-left: 37%;
+            font-size: 10px;
+            width: 100px;    
+        }
+        .gorro2 {
+            padding-left: 45%;
+            font-size: 10px;
+            width: 100px;    
+        }
+    }
+    
+    @media screen and (max-width: 1024px) {
+        .verTodas {
+            width: 12vw;
+            background-color: #87CFBE;
+        }
+        .card-body {
+            padding-left: 10%;
+            padding-right: 0%;
+        }
+        .col-5 {
+            padding: 0%;
+        }
+        .col-4 {
+            padding-right: 0%;
+            padding-left: 0%;
+            justify-content: end;
+        }
+        .col-3 {
+            padding-right: 0%;
+        }
+        .reloj {
+            padding-left: 15%;
+        }
+        .gorro {
+            padding-left: 27%;
+            font-size: 9px;
+        }
+        .gorro2 {
+            padding-left: 27%;
+            font-size: 9px;
+        }
+        .card {
+            width: 80% !important;
+        }
+        .icono {
+            max-width: 145%;
+        }
+        .icono2 {
+            max-width: 80%;
+        }
+        img {
+            max-height: 225px;
+        }
+        h5 {
+            font-family: "Montserrat-SemiBold";
+            font-size: 13px;
+        }
+        .tituloTexto {
+            padding-top: 1.6%;
+            line-height: 20px;
+            font-family: "Montserrat-SemiBold";
+            font-size: 34px;
+            color: rgb(255, 255, 255);
+        }
+        .texto1 {
+            // margin-top: 5%;
+            font-family: "Montserrat-SemiBold";
+            font-size: 16px;
+            color: rgb(255, 255, 255);
+            line-height: 18px;
+        }
+        .texto2 {
+            // margin-top: 7%;
+            font-family: "Montserrat-Light";
+            font-size: 13px;
+            color: rgb(255, 255, 255);
+        }
+        p {
+            font-size: 9px;
+            font-family: "Montserrat-Light";
+        }
+    }
+    
+    @media screen and (max-width: 414px) {
+        .verTodas {
+            width: 33vw;
+            background-color: #87CFBE;
+        }
+        .col-8 {
+            display: none;
+        }
+        .col-12 {
+            align-items: center;
+            padding-left: 30px;
+        }
+        .celular {
+            .tituloTexto {
+                font-family: "Montserrat-SemiBold";
+                font-size: 38px;
+                color: rgb(255, 255, 255);
+                text-align: center;
+            }
+            .texto1 {
+                margin-top: 6%;
+                font-family: "Montserrat-SemiBold";
+                font-size: 20px;
+                color: rgb(255, 255, 255);
+                text-align: center;
+                line-height: 24px;
+            }
+            .texto2 {
+                margin-top: 7%;
+                font-family: "Montserrat-Light";
+                font-size: 15px;
+                color: rgb(255, 255, 255);
+                text-align: center;
+            }
+            .verTodo {
+                font-family: "Montserrat-SemiBold";
+                font-size: 10px;
+                line-height: 30px;
+                text-align: center;
+                padding-left: 32%;
+            }
+        }
+    }

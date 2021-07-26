@@ -1,0 +1,40 @@
+<div class="w3-container  " style="width: 100% margin=0%">
+
+
+    <!-- <div class="span " style="background-color: black;height:2vw"></div> -->
+
+
+
+    <div class="container">
+        <!-- hace falta? no queda mejor sin este container? -->
+
+        <h1 *ngIf="celular" class=" text-center tituloContactanos">
+            PUNTOS DE VENTA
+            <hr class="new4">
+        </h1>
+
+
+        <div class="row ">
+            <div class="col" [ngClass]="{'col-12 celular':mapa }">
+                <iframe class="mapa" src="https://www.google.com/maps/d/u/0/embed?mid=1LYSualpzrTI5VikXamrUFBLRXq-NXQiL"></iframe>
+            </div>
+
+            <div class="col align-self-center" *ngIf="!celular">
+                <h1 class="text-center tituloContactanos">
+                    Puntos<br>de venta
+                    <hr class="new4">
+                </h1>
+
+                <h4 class="text-center textoc">
+                    <p>¡Busca el lugar más<br> cercano para adquirir <b>Buenos Vientos</b>!</p>
+
+                    <p>¡Acercate en el mapa y encontranos!</p>
+                </h4>
+
+
+            </div>
+        </div>
+
+
+    </div>
+</div>

@@ -1,0 +1,168 @@
+
+html {
+    scroll-behavior: smooth;
+  }
+
+
+//Fuentes *******************************************************
+
+//¨Pacifico
+.row{
+    max-width: 100%;
+}
+@font-face {
+    font-family: 'Pacifico-Regular';
+    src: url(fuentes/Pacifico/Pacifico-Regular.ttf)
+}
+@font-face {
+    font-family: 'Pacifico-Regular';
+    src: url(fuentes/Pacifico/Pacifico-Regular.ttf)
+}
+
+// PlayfairDisplay minuscula conocenos
+
+@font-face {
+    font-family: 'PlayfairDisplay-Black';
+    src: url(fuentes/Playfair_Display/PlayfairDisplay-Black.ttf)
+}
+
+/* @font-face {
+    font-family: 'PlayfairDisplay-BlackItalic';
+    src: url(fuentes/Playfair_Display/PlayfairDisplay-Blackitalic.ttf)
+} */
+ @font-face {
+    font-family: 'PlayfairDisplay-Bold';
+    src: url(fuentes/Playfair_Display/PlayfairDisplay-Bold.ttf)
+} 
+@font-face {
+    font-family: 'PlayfairDisplay-BoldItalic';
+    src: url(fuentes/Playfair_Display/PlayfairDisplay-BoldItalic.ttf)
+}
+@font-face {
+    font-family: 'PlayfairDisplay-Italic';
+    src: url(fuentes/Playfair_Display/PlayfairDisplay-Italic.ttf)
+}
+@font-face {
+    font-family: 'PlayfairDisplay-Regular';
+    src: url(fuentes/Playfair_Display/PlayfairDisplay-Regular.ttf)
+}
+
+// PlayfairDisplaySc mayuscula conocenos
+
+@font-face {
+    font-family: 'PlayfairDisplaySc-Black';
+    src: url(fuentes/Playfair_Display_SC/PlayfairDisplaySC-Black.ttf)
+}
+
+@font-face {
+    font-family: 'PlayfairDisplaySc-BlackItalic';
+    src: url(fuentes/Playfair_Display_SC/PlayfairDisplaySC-BlackItalic.ttf)
+}
+@font-face {
+    font-family: 'PlayfairDisplaySc-Bold';
+    src: url(fuentes/Playfair_Display_SC/PlayfairDisplaySC-Bold.ttf)
+}
+@font-face {
+    font-family: 'PlayfairDisplaySc-BoldItalic';
+    src: url(fuentes/Playfair_Display_SC/PlayfairDisplaySC-BoldItalic.ttf)
+}
+@font-face {
+    font-family: 'PlayfairDisplaySc-Italic';
+    src: url(fuentes/Playfair_Display_SC/PlayfairDisplaySC-Italic.ttf)
+}
+@font-face {
+    font-family: 'PlayfairDisplaySc-Regular';
+    src: url(fuentes/Playfair_Display_SC/PlayfairDisplaySC-Regular.ttf)
+}
+
+//Montserrat
+@font-face {
+    font-family: 'Montserrat-Bold';
+    src: url(fuentes/Montserrat/Montserrat-Bold.ttf)
+}
+
+@font-face {
+    font-family: 'Montserrat-Black';
+    src: url(fuentes/Montserrat/Montserrat-Black.ttf)
+}
+
+@font-face {
+    font-family: 'Montserrat-BoldItalic';
+    src: url(fuentes/Montserrat/Montserrat-BoldItalic.ttf)
+}
+
+@font-face {
+    font-family: 'Montserrat-ExtraBold';
+    src: url(fuentes/Montserrat/Montserrat-ExtraBold.ttf)
+}
+
+
+@font-face {
+    font-family: 'Montserrat-ExtraBoldItalic';
+    src: url(fuentes/Montserrat/Montserrat-ExtraBoldItalic.ttf)
+}
+
+
+@font-face {
+    font-family: 'Montserrat-ExtraLitghtItalic';
+    src: url(fuentes/Montserrat/Montserrat-ExtraLightItalic.ttf)
+}
+
+
+
+@font-face {
+    font-family: 'Montserrat-Italic';
+    src: url(fuentes/Montserrat/Montserrat-Italic.ttf)
+}
+
+@font-face {
+    font-family: 'Montserrat-Light';
+    src: url(fuentes/Montserrat/Montserrat-Light.ttf)
+}
+
+@font-face {
+    font-family: 'Montserrat-LitghtItalic';
+    src: url(fuentes/Montserrat/Montserrat-LightItalic.ttf)
+}
+
+@font-face {
+    font-family: 'Montserrat-MediumItalic';
+    src: url(fuentes/Montserrat/Montserrat-MediumItalic.ttf)
+}
+
+@font-face {
+    font-family: 'Montserrat-Medium';
+    src: url(fuentes/Montserrat/Montserrat-Medium.ttf) 
+}
+
+@font-face {
+    font-family: 'Montserrat-Regular';
+    src: url(fuentes/Montserrat/Montserrat-Regular.ttf)
+}
+
+@font-face {
+    font-family: 'Montserrat-SemiBold';
+    src: url(fuentes/Montserrat/Montserrat-SemiBold.ttf)
+}
+
+@font-face {
+    font-family: 'Montserrat-SemiBoldItalic';
+    src: url(fuentes/Montserrat/Montserrat-SemiBoldItalic.ttf)
+}
+
+@font-face {
+    font-family: 'Montserrat-Thin';
+    src: url(fuentes/Montserrat/Montserrat-Thin.ttf)
+}
+
+@font-face {
+    font-family: 'Montserrat-ThinItalic';
+    src: url(fuentes/Montserrat/Montserrat-ThinItalic.ttf)
+}
+
+
+html, body
+{
+    height: 100%;
+}
+

@@ -1,0 +1,117 @@
+<div class="header">
+
+    <a [routerLink]="['/home']" routerLinkActive="active">
+        <img src="{{ruta}}" [ngStyle]="{'heigth':hamburguesa ? '' :'', 'width':hamburguesa ? '':'', 'margin-left':hamburguesa && !movil ? '43vw':'0%', 'transition':hamburguesa ? '1.5s':'0.5s'}" [ngStyle]="{'margin-left':movil ? '-5%':'0%', 'transition':hamburguesa ? '1.5s':'1s'}"
+            alt="logoBV" style="margin-top: 0.5%;">
+    </a>
+</div>
+
+<img src="assets/imagenes/recetas/header_recetas.png" alt="" class="responsive" style="display: block;">
+
+<div class="row ml-4 mr-4 mb-4">
+    <div class="col-md-3 col-sm-12 fondoGris">
+        <p class="tituloBuscador" style="margin-bottom: 30%;margin-top: 20%;">
+            BUSCADOR
+        </p>
+        <p class="subtituloBuscador sei mt-4">
+            Sabor
+        </p>
+        <div class="form-check mt-1" style="margin-left: 9%;">
+            <input class="form-check-input" type="checkbox" name="exampleRadios" id="dulce" value="dulce" [(ngModel)]="dulce" (change)="click()">
+            <label class="form-check-label" for="dulce" style="padding-top: 0.5%;">
+              Dulces
+            </label>
+        </div>
+        <div class="form-check mt-1" style="margin-left: 9%;">
+            <input class="form-check-input" type="checkbox" name="exampleRadios" id="salado" value="salado" [(ngModel)]="salado" (change)="click()">
+            <label class="form-check-label" for="salado" style="padding-top: 0.5%;">
+              Salados
+            </label>
+        </div>
+        <div class="form-check mt-1" style="margin-left: 9%;">
+            <input class="form-check-input" type="checkbox" name="exampleRadios" id="natural" value="natural" [(ngModel)]="natural" (change)="click()">
+            <label class="form-check-label" for="natural" style="padding-top: 0.5%;">
+             Naturales  
+            </label>
+        </div>
+
+        <p class="subtituloBuscador sei" style="margin-top: 15%;">
+            Ingredientes
+        </p>
+        <div class="form-check mt-1" style="margin-left: 9%;">
+            <input class="form-check-input" type="checkbox" name="ingredientes" id="almendra" value="almendra" [(ngModel)]="almendras" (change)="click()">
+            <label class="form-check-label" for="almendra" style="padding-top: 0.5%;">
+              Almendras
+            </label>
+        </div>
+        <div class="form-check mt-1" style="margin-left: 9%;">
+            <input class="form-check-input" type="checkbox" name="ingredientes" id="avellana" value="avellana" [(ngModel)]="avellanas" (change)="click()">
+            <label class="form-check-label" for="avellana" style="padding-top: 0.5%;">
+              Avellanas
+            </label>
+        </div>
+        <div class="form-check mt-1" style="margin-left: 9%;">
+            <input class="form-check-input" type="checkbox" name="ingredientes" id="nuez" value="nuez" [(ngModel)]="nueces" (change)="click()">
+            <label class="form-check-label" for="nuez" style="padding-top: 0.5%;">
+              Nueces
+            </label>
+        </div>
+        <div class="form-check mt-1" style="margin-left: 9%;">
+            <input class="form-check-input" type="checkbox" name="ingredientes" id="pasa" value="pasa" [(ngModel)]="pasas" (change)="click()">
+            <label class="form-check-label" for="pasa" style="padding-top: 0.5%;">
+              Pasas
+            </label>
+        </div>
+        <div class="form-check mt-1" style="margin-left: 9%;">
+            <input class="form-check-input" type="checkbox" name="ingredientes" id="harina" value="harina" [(ngModel)]="harina" (change)="click()">
+            <label class="form-check-label" for="harina" style="padding-top: 0.5%;">
+                Harina de Almendras
+            </label>
+        </div>
+
+
+
+
+        <div class="form-check mb-4" style="margin-left: 9%;margin-top: 15%;">
+            <input class="form-check-input" type="checkbox" name="ingredientes exampleRadios" id="todos" value="todos" [(ngModel)]="todas" (change)="click()">
+            <label class="form-check-label" for="todos" style="padding-top: 0.5%;">
+Todas           
+ </label>
+        </div>
+    </div>
+
+
+    <div class="col-md-9 col-sm-12 margen align-self-center">
+
+        <div class="row align-items-center">
+
+            <div class="col-md-6 col-sm-12 mt-4" *ngFor="let receta of recetas;let i =index" [ngStyle]="{'display': receta.mostrar ? 'block' :'none'}">
+                <div class="card" *ngIf="receta.mostrar">
+                    <a href="{{receta.ruta}}" target="_blank">
+                        <img class="card-img-top" src="{{receta.imagen}}" alt="Card image cap">
+                    </a>
+                    <div class="card-body" [ngClass]="{'celeste':receta.dulce,'verde':receta.natural,'amarillo':receta.salado}">
+                        <div class="row">
+                            <div class="col-md-5 align-self-center col-sm-12 align-self-center">
+                                <h5><strong>{{receta.nombre}}</strong></h5>
+                            </div>
+                            <div class="col-4 align-items-center" *ngIf="!movil">
+                                <img src="assets/imagenes/recetas/icono_reloj.png" alt="" class="icono2">
+                                <p class="reloj"><strong>{{receta.duracion}}</strong></p>
+                            </div>
+                            <div class="col-3 align-items-center" *ngIf="!movil">
+                                <img src="../../assets/imagenes/recetas/icono_sombrero.png" alt="" class="icono">
+                                <p class="gorro" [ngClass]="{'gorro2':receta.dificultad == 'Fácil'  }"><strong>{{receta.dificultad}}</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </div>
+
+    </div>
+
+
+</div>
+
+<app-footer></app-footer>

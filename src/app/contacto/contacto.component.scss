@@ -1,0 +1,286 @@
+.trama {
+    background: url('src/assets/imagenes/contacto2.0/fondoContacto.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    //background: fixed;
+    //background-attachment: scroll; //permite que el back sea scroll
+    background-size: cover;
+    //position: absolute;
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    /* background: url('src/assets/imagenes/contacto/fondocontacto.png') no-repeat  center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100%;
+    width: 100% ;
+    text-align: center; */
+}
+
+.tituloMensaje {
+    font-family: 'Montserrat-SemiBold';
+    font-size: 45px;
+    color: rgb(212, 154, 7);
+    margin-top: 20%;
+    max-width: 600px;
+    text-align: left;
+}
+
+.textoMensaje {
+    font-family: "Montserrat-Light";
+    font-size: 22px;
+    line-height: 1.7;
+    color: black;
+}
+
+.contact {
+    padding: 5vh;
+    //position: center;
+}
+
+.formu {
+    margin-top: 9%;
+    margin-bottom: 40%;
+    //margin-left: 7%;
+    margin-right: 5%
+}
+
+.posbuton {
+    text-align-last: right;
+}
+
+.bigicon {
+    font-size: 35px;
+    color: #36A0FF;
+}
+
+.col-centered {
+    display: inline-block;
+    float: none;
+    /* reset the text-align */
+    text-align: left;
+    /* inline-block space fix */
+    text-align: center;
+}
+
+.responsive {
+    width: 100%;
+    height: auto;
+    max-width: 73%;
+    max-height: 94%
+}
+
+
+@media screen and (max-width: 1370px) {
+    .tituloMensaje {
+        font-size: 44px;
+    }
+}
+
+@media screen and (max-width: 812px) {
+    .trama {
+        background-image: none; //url('src/assets/imagenes/contacto/contactanoscelu.jpg');
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: auto;
+        max-height: 100%;
+        z-index: 1;
+    }
+    .trama1 {
+        //background-image: url('src/assets/imagenes/contacto/contactanoscelu.jpg');
+        background-color: #c2deea;
+        background-size: cover;
+        z-index: 0;
+    }
+    .celular {
+        align-content: inherit;
+        margin-left: 5%;
+    }
+    .tituloMensaje {
+        font-family: "Montserrat-SemiBold";
+        font-size: 20px;
+        color: rgb(212, 154, 7);
+        margin-top: 20%;
+        padding-left: 7%;
+    }
+    .nombreimg {
+        display: none;
+    }
+    .apellido {
+        display: none
+    }
+    .email {
+        display: none
+    }
+    .localidad {
+        display: none
+    }
+    .telefono {
+        display: none
+    }
+    .mensaje {
+        display: none
+    }
+    .textoMensaje {
+        font-family: "Montserrat-SemiBold";
+        font-size: 10px;
+        line-height: 1.7;
+        color: black;
+        padding-left: 10%;
+    }
+    .formu {
+        margin-top: 20%;
+        margin-bottom: 40%;
+        //margin-left: 7%;
+        margin-right: 10%;
+        width: 100%;
+    }
+    .btn-warning {
+        margin-right: 15%;
+    }
+    .col-11 {
+        margin-right: 15%;
+    }
+}
+
+@media screen and (max-width: 414px) {
+    .trama {
+        background-image: none; //url('src/assets/imagenes/contacto/contactanoscelu.jpg');
+        background-size: contain;
+        background-position: center center;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: auto;
+        max-height: 100%;
+        z-index: 1;
+    }
+    .trama1 {
+        //background-image: url('src/assets/imagenes/contacto/contactanoscelu.jpg');
+        background-color: #c2deea;
+        background-size: cover;
+        z-index: 0;
+    }
+    .celular {
+        align-content: inherit;
+        margin-left: 5%;
+    }
+    .tituloMensaje {
+        font-family: 'Montserrat-SemiBold';
+        font-size: 20px;
+        color: rgb(212, 154, 7);
+        margin-top: 13%;
+        padding-left: 13%;
+    }
+    .nombreimg {
+        display: none;
+    }
+    .apellido {
+        display: none
+    }
+    .email {
+        display: none
+    }
+    .localidad {
+        display: none
+    }
+    .telefono {
+        display: none
+    }
+    .mensaje {
+        display: none
+    }
+    .textoMensaje {
+        font-family: "Montserrat-SemiBold";
+        font-size: 10px;
+        line-height: 1.7;
+        color: black;
+        padding-left: 10%;
+        margin-bottom: -13%;
+    }
+    .formu[_ngcontent-c6] {
+        margin-top: 10%;
+        margin-bottom: 40%;
+        //margin-left: 7%;
+        margin-right: 10%;
+        width: 100%;
+    }
+    .btn-warning {
+        margin-right: 15%;
+    }
+    .col-11 {
+        margin-right: 15%;
+    }
+}
+
+@media screen and (max-width: 378px) {
+    .trama {
+        background-image: none; //url('src/assets/imagenes/contacto/contactanoscelu.jpg');
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: auto;
+        max-height: 100%;
+        z-index: 1;
+    }
+    .trama1 {
+        //background-image: url('src/assets/imagenes/contacto/contactanoscelu.jpg');
+        background-color: #c2deea;
+        background-size: cover;
+        z-index: 0;
+    }
+    .celular {
+        align-content: inherit;
+        margin-left: 5%;
+    }
+    .tituloMensaje {
+        font-family: "Montserrat-SemiBold";
+        font-size: 20px;
+        color: rgb(212, 154, 7);
+        margin-top: 13%;
+        padding-left: 7%;
+    }
+    .nombreimg {
+        display: none;
+    }
+    .apellido {
+        display: none
+    }
+    .email {
+        display: none
+    }
+    .localidad {
+        display: none
+    }
+    .telefono {
+        display: none
+    }
+    .mensaje {
+        display: none
+    }
+    .textoMensaje {
+        font-family: "Montserrat-SemiBold";
+        font-size: 10px;
+        line-height: 1.7;
+        color: black;
+        padding-left: 10%;
+        margin-bottom: -13%;
+    }
+    .formu {
+        margin-top: 20%;
+        margin-bottom: 40%;
+        //margin-left: 7%;
+        margin-right: 10%;
+        width: 100%;
+    }
+    .btn-warning {
+        margin-right: 15%;
+    }
+    .col-11 {
+        margin-right: 15%;
+    }
+}

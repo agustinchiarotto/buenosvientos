@@ -1,0 +1,283 @@
+<section>
+    <div class="w3-container align-items-center  " style="max-width: 100%;">
+
+        <div *ngIf="!movil">
+            <div class="container" id="productos">
+                <div class="row m-4 justify-content-md-center">
+
+                    <div class="col center nopadding">
+                        <img src="assets/imagenes/conocenostop1.jpg" alt="">
+                    </div>
+
+                    <div class="col center nopadding">
+                        <img src="assets/imagenes/conocenostop2.jpg" alt="">
+                    </div>
+
+                    <div class="col center nopadding">
+                        <img src="assets/imagenes/conocenostop3.jpg" alt="">
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+        <div class="titulocelu" *ngIf="movil">
+            <h1 class="text-center tituloConocenos">NUESTROS
+                <!-- PRODUCTOS -->
+            </h1>
+            <h1 class="text-center tituloConocenos">PRODUCTOS</h1>
+            <hr class="new4">
+        </div>
+
+        <div *ngIf="!movil">
+            <h1 class="text-center tituloConocenos">Nuestros Productos</h1>
+            <hr class="new4">
+        </div>
+
+        <div *ngIf="!movil">
+            <div class="text-center textoConocenos colorMarron">
+
+                La tierra, el agua y el clima de esta región de la patagonia le confieren a nuestros <br> frutos secos sabor, color y tamaños inigualables.
+            </div>
+
+        </div>
+
+
+        <div *ngIf="!movil">
+            <div class="container" style="margin-top:3%;
+">
+                <div class="row m-4 justify-content-md-center">
+                    <div class="col nopadding ml-4 center">
+
+                        <a href="#dulces"> <img src="assets/imagenes/conocenos1.gif" alt=""> </a>
+
+                    </div>
+                    <div class="col nopadding center">
+                        <a href="#salados"> <img src="assets/imagenes/conocenos2.gif" alt=""> </a>
+
+                    </div>
+                    <div class="col nopadding center">
+                        <a href="#naturales"> <img src="assets/imagenes/conocenos3.gif" alt=""> </a>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+
+        <div *ngIf="movil">
+            <div class="container imagenes" style="margin-top:-3%;">
+                <div class="row justify-content-md-center">
+                    <div class="col nopadding ml-4 center">
+
+                        <a href="#dulces"> <img src="assets/imagenes/conocenos1.gif" alt=""> </a>
+
+                    </div>
+                    <div class="col nopadding center">
+                        <a href="#salados"> <img src="assets/imagenes/conocenos2.gif" alt=""> </a>
+
+                    </div>
+                    <div class="col nopadding center derechaa">
+                        <a href="#naturales"> <img src="assets/imagenes/conocenos3.gif" alt=""> </a>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+
+
+    </div>
+    <div class="w3-container m-1 align-items-center fondoMarron " id="dulces" style=" max-width: 100%;">
+        <h1></h1>
+    </div>
+    <div class="w3-container m-1 align-items-center fondo" id="dulces" style=" max-width: 100%;">
+        <div *ngIf="movil">
+            <h1 class="text-center mt-5 tituloDulce" style="max-width: 100%">
+                DULCES
+            </h1>
+        </div>
+        <div *ngIf="!movil">
+            <h1 class="text-center mt-5 tituloDulce" style="max-width: 100%">
+                Dulces
+            </h1>
+        </div>
+
+        <h2 class="text-center textoProductosNegrita colorMarron" style="max-width: 100%; font-size: 20px">Tardes tentadoras
+        </h2>
+
+
+
+
+
+        <!-- para cuando no esta el coso marron DULCES-->
+        <div id="parent" *ngIf="!mostrarDulces">
+
+
+
+            <div class="child" *ngFor="let dulce of dulces;let i = index" [ngStyle]="{'margin-right': i==4  && !movil ? '15%' :'0%','margin-left': i==3 && !movil ? '15%' :'0%'}">
+
+
+                <a href=#dulces>
+                    <img class="center wow animated pulse delay-1s" src="{{dulce.imagen}}" alt="imagen" [ngStyle]="{'width': dulce.size && !movil ? '70%' :'80%'}" (mouseenter)="mouseEnter(dulce)" (mouseleave)="mouseLeave(dulce) " (click)="onclickDulce(dulce)">
+                </a>
+                <h2 class="text-center textoProductos colorMarron">
+
+                    {{dulce.nombre}}</h2>
+                <h2 class="text-center textoProductosNegrita colorMarron">
+                    {{dulce.negrita}}</h2>
+            </div>
+        </div>
+    </div>
+
+    <!-- // para cuando no esta el coso marron -->
+
+    <!-- Para cuando esta el coso marron -->
+
+    <div *ngIf="mostrarDulces">
+        <div *ngFor="let dulce of dulces">
+            <div [ngStyle]="{'display': dulce.click ? 'block':'none'}" style="    margin-bottom: 4%;">
+                <div class="cuadradoMarron  mt-1">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-3 mt-4">
+                            <img class="center wow animated pulse delay-1s" src="{{dulce.imagen}}" alt="imagen" style="max-width: 90%;width:90%">
+                        </div>
+                        <div class="col-lg-7 align-self-center">
+                            <button type="button" class="close closes align-self-center" aria-label="Close" (click)="cerrarMarron()" style=" font-size: 40px;">
+                <span aria-hidden="true">&times;</span>
+              </button>
+                            <img src="{{dulce.imagenCE}}" style="max-width: 300%;" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- termina el coso marron -->
+
+
+    <div class="w3-container m-1 align-items-center fondoAmarillo " id="salados" style=" max-width: 100%;">
+        <h1></h1>
+    </div>
+    <div class="w3-container m-1 align-items-center fondo" id="salados" style=" max-width: 100%;">
+        <div *ngIf="movil">
+            <h1 class="text-center mt-5 tituloSalado " style="max-width: 100%">
+                SALADOS
+            </h1>
+        </div>
+        <div *ngIf="!movil">
+            <h1 class="text-center mt-5 tituloSalado " style="max-width: 100%">
+                Salados
+            </h1>
+        </div>
+
+        <h2 class="text-center textoProductosNegrita colorMarron" style="max-width: 100%; font-size: 20px">Deliciosos encuentros</h2>
+        <div id="parent" *ngIf="!mostrarSalados">
+            <div class="child" *ngFor="let salado of salados">
+                <a href=#salados>
+                    <img class="center wow animated pulse delay-1s" src="{{salado.imagen}}" alt="imagen" width="80%" (mouseenter)="mouseEnter(salado)" (mouseleave)="mouseLeave(salado)" (click)="onclickSalado(salado)">
+                </a>
+                <h2 class="text-center textoProductos colorMarron">
+                    {{salado.nombre}}</h2>
+                <h2 class="text-center textoProductosNegrita colorMarron">
+                    {{salado.negrita}}</h2>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Para cuando esta el coso marron -->
+
+    <div *ngIf="mostrarSalados">
+        <div *ngFor="let salado of salados">
+            <div [ngStyle]="{'display': salado.click ? 'block':'none'}" style="    margin-bottom: 4%;">
+                <div class="cuadradoMarron  mt-1">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-3 mt-4">
+                            <img class="center" src="{{salado.imagen}}" alt="imagen" style="max-width: 90%;width:90%">
+                        </div>
+                        <div class="col-lg-7 align-self-center">
+                            <button type="button" class="close closes align-self-center" aria-label="Close" (click)="cerrarMarron()" style=" font-size: 40px;">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+                            <img src="{{salado.imagenCE}}" style="max-width: 300%;" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- termina el coso marron -->
+
+
+
+    <div class="w3-container m-1 align-items-center fondoVerde" style=" max-width: 100%; ">
+        <h1></h1>
+    </div>
+    <div class="w3-container m-1 align-items-center fondo" id="naturales" style=" max-width: 100%;">
+        <div *ngIf="movil">
+            <h1 class="text-center mt-5 tituloNaturales" style="max-width: 100%;">
+                NATURALES
+            </h1>
+        </div>
+        <div *ngIf="!movil">
+            <h1 class="text-center mt-5 tituloNaturales" style="max-width: 100%;">
+                Naturales
+            </h1>
+
+        </div>
+
+        <h2 class="text-center textoProductosNegrita colorMarron" style="max-width: 100%; font-size: 20px">Sabor y equilibrio natural</h2>
+        <div id="parent" *ngIf="!mostrarNaturales">
+            <div class="child" *ngFor="let natural of naturales let i = index">
+                <a href=#naturales>
+          <img class="center wow animated pulse delay-1s" src="{{natural.imagen}}" alt="imagen" (mouseenter)="mouseEnter(natural)"
+          [ngStyle]="{'width': i>5 && natural.mouse ? '36.35%' :'80%'}" 
+            (mouseleave)="mouseLeave(natural)" (click)="onclickNaturales(natural)">
+        </a>
+                <h2 class="text-center textoProductos colorMarron">
+                    {{natural.nombre}}</h2>
+                <h2 class="text-center textoProductosNegrita colorMarron">
+                    {{natural.negrita}}</h2>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Para cuando esta el coso marron -->
+
+    <div *ngIf="mostrarNaturales">
+        <div *ngFor="let natural of naturales">
+            <div [ngStyle]="{'display': natural.click ? 'block':'none'}" style="    margin-bottom: 4%;">
+                <div class="cuadradoMarron  mt-1">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-3 mt-4">
+                            <img class="center" src="{{natural.imagen}}" alt="imagen" style="max-width: 90%;width:90%">
+                        </div>
+                        <div class="col-lg-7 align-self-center">
+                            <button type="button" class="close closes align-self-center" aria-label="Close" (click)="cerrarMarron()" style=" font-size: 40px;">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+                            <img src="{{natural.imagenCE}}" style="max-width: 300%;" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- termina el coso marron -->
+</section>

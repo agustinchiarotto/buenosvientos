@@ -1,0 +1,107 @@
+<section id="contacto" class="trama1">
+    <div class="w3-container  trama">
+        <div class="row justify-content-end ">
+            <!--   <div class="col-md-7"></div>  saco el mr-4-->
+            <div class="col-5 col-centered " [ngClass]="{'col-12 celular':conta }">
+
+
+                <div class=" tituloMensaje ml-4 wow animated fadeInLeft" *ngIf="conta">¡ENVIANOS UN MENSAJE!</div>
+                <div class="text-center textoMensaje wow animated fadeInLeft" *ngIf="conta">
+
+                    NOS ENCANTA SABER TUS OPINIONES.
+                </div>
+                <div class=" tituloMensaje ml-4 wow animated fadeInLeft" *ngIf="!conta">¡Envianos un mensaje!</div>
+                <div class="text-center textoMensaje wow animated fadeInLeft" *ngIf="!conta">
+
+                    Nos encanta saber tus opiniones.
+                </div>
+                <form class="form-horizontal formu wow animated fadeInDown" #f="ngForm" (ngSubmit)="f.form.valid && enviarMail(f)">
+
+
+
+                    <div class="form-group required">
+                        <div class="row justify-content-end">
+                            <div class="col nombreimg">
+                                <img src="assets/imagenes/contacto2.0/nombre.png" class="responsive">
+                            </div>
+
+                            <div class="col-8" [ngClass]="{'col-10 celular':conta }">
+                                <input id="fnombre" name="nombre" type="text" placeholder="Nombre" class="form-control " [(ngModel)]="model.nombre" required>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="form-group required">
+                        <div class="row justify-content-end">
+                            <div class="col apellido">
+                                <img src="assets/imagenes/contacto2.0/apellido.png" class="responsive" alt="" width="73%" height="94%">
+                            </div>
+
+                            <div class="col-8" [ngClass]="{'col-10 celular':conta }">
+                                <input id="fapellido" name="apellido" type="text" placeholder="Apellido" class="form-control " [(ngModel)]="model.apellido" required>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group required">
+                        <div class="row justify-content-end">
+                            <div class="col email">
+                                <img src="assets/imagenes/contacto2.0/email.png" class="responsive" alt="" width="73%" height="94%%">
+                            </div>
+
+                            <div class="col-8" [ngClass]="{'col-10 celular':conta }">
+                                <input id="femail" name="email" type="text" placeholder="Email" class="form-control " [(ngModel)]="model.email" required>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group required">
+                        <div class="row justify-content-end">
+                            <div class="col telefono">
+                                <img src="assets/imagenes/contacto2.0/telefono.png" class="responsive" alt="" width="73%" height="94%">
+                            </div>
+
+                            <div class="col-8" [ngClass]="{'col-10 celular':conta }">
+                                <input id="ftel" name="tel" type="text" placeholder="Teléfono" class="form-control " [(ngModel)]="model.tel" required>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group required">
+                        <div class="row justify-content-end">
+                            <div class="col localidad">
+                                <img src="assets/imagenes/contacto2.0/localidad.png" class="responsive" alt="" width="73%" height="94%">
+                            </div>
+
+                            <div class="col-8" [ngClass]="{'col-10 celular':conta }">
+                                <input id="flocalidad" name="localidad  " type="text" placeholder="Localidad" class="form-control " [(ngModel)]="model.localidad" required>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group required">
+                        <div class="row justify-content-end">
+                            <div class="col mensaje">
+                                <img src="assets/imagenes/contacto2.0/mensaje.png" class="responsive" alt="" width="73%" height="25%">
+                            </div>
+
+                            <div class="col-8" [ngClass]="{'col-10 celular':conta }">
+                                <textarea class="form-control" id="message" name="message" placeholder="Mensaje" [(ngModel)]="model.mensaje" required rows="7"></textarea>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group required">
+                        <div class="col-11 posbuton">
+                            <button [disabled]="!f.form.valid" type="submit" class="btn btn-warning btn-lg" style="margin-right:-6%; font-family: 'Montserrat-SemiBold'; font-size: 15px;">Enviar </button>
+                        </div>
+                    </div>
+
+
+
+                </form>
+
+
+            </div>
+        </div>
+    </div>
+</section>

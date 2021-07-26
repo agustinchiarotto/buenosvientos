@@ -1,0 +1,311 @@
+.h1 {
+    text-shadow: 1px
+}
+
+
+/* .fondo[_ngcontent-c3]{
+  background: url('src/assets/imagenes/FONDO_.png') ;
+  background-attachment: fixed;
+  background-size: 100%;
+  z-index: 3;
+  
+  position: relative;
+} */
+
+.textoBlanco {
+    color: white;
+}
+
+.close {
+    color: rgb(71, 47, 36);
+    font-family: 'Montserrat-Black';
+}
+
+.closes {
+    color: rgb(71, 47, 36);
+    font-family: 'Montserrat-Black';
+}
+
+hr.new4 {
+    width: 50%;
+    border: 2px solid rgba(245, 203, 88, 1);
+    background-color: black;
+    margin-top: 0.7%;
+}
+
+hr.new2 {
+    width: 20%;
+    border: 3.5px solid rgb(182, 219, 189);
+    ;
+    background-color: black;
+}
+
+img {
+    max-width: 100%;
+}
+
+.fondoNegro {
+    background-color: black;
+}
+
+.fondoMarron {
+    background-color: #472f24;
+    height: 2em;
+}
+
+.fondoAmarillo {
+    background-color: rgb(237, 209, 133);
+    height: 2em;
+}
+
+.fondoVerde {
+    background-color: rgb(182, 219, 189);
+    height: 2em;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+#parent {
+    margin-left: 30vh;
+    margin-right: 30vh;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 10vh;
+}
+
+.child {
+    flex: 1;
+    min-width: 30%;
+    border: 5px solid white;
+}
+
+@media (max-width: 700px) {
+    .child {
+        min-width: 33.33%;
+    }
+}
+
+@media (max-width: 400px) {
+    .child {
+        min-width: 50%;
+    }
+}
+
+@media (max-width: 1024px) {
+    .child {
+        min-width: 40%;
+        max-width: 60%;
+    }
+    #parent {
+        margin-left: 15vh;
+        margin-right: 15vh;
+    }
+}
+
+
+/* @media (max-height: 768px) {
+  .child {
+    min-width: 40%;
+    max-width: 60%; 
+  }
+}
+  
+@media (max-height: 1366px) {
+  .child {
+    min-width: 50%;
+    max-width: 70%; 
+  }
+} */
+
+@media (max-width: 768px) {
+    .child {
+        min-width: 40%;
+        max-width: 60%;
+    }
+}
+
+@media (max-width: 812px) {
+    .child {
+        min-width: 40%;
+    }
+}
+
+.center {
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.nopadding {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.tituloConocenos {
+    font-family: 'Montserrat-SemiBold';
+    font-size: 52px;
+    color: #665048;
+}
+
+.tituloDulce {
+    font-family: "Montserrat-SemiBold";
+    font-size: 67px;
+    color: rgb(87, 154, 160);
+}
+
+.tituloSalado {
+    font-family: 'Montserrat-SemiBold';
+    font-size: 67px;
+    color: rgb(179, 85, 42);
+}
+
+.tituloNaturales {
+    font-family: 'Montserrat-SemiBold';
+    font-size: 67px;
+    color: rgb(83, 105, 26);
+}
+
+.tituloHarina {
+    font-family: "PlayfairDisplay-Bold";
+    font-size: 67px;
+    color: rgb(179, 85, 42);
+}
+
+.textoConocenos {
+    font-family: "Montserrat-Light";
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.textoProductos {
+    font-family: "Montserrat-Thin";
+    font-size: 19px;
+    margin: 0%;
+    // line-height: 2;
+}
+
+.textoMarron {
+    font-family: 'Montserrat-Black';
+    color: rgb(179, 85, 42);
+    font-size: 26px;
+    line-height: 1;
+}
+
+.colorMarron {
+    color: #665048
+}
+
+.textoProductosNegrita {
+    font-family: "Montserrat-Light";
+    font-size: 19px;
+    // line-height: 2;
+}
+
+.cuadradoMarron {
+    width: 100vw;
+    height: 30vw;
+    animation-name: fadeInRight;
+    animation-duration: 0.8s;
+    animation-play-state: running;
+    // kground: url('src/assets/imagenes/productos/pastilla.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100%;
+}
+
+@keyframes example {
+    from {
+        display: block;
+    }
+    to {
+        display: none;
+    }
+}
+
+
+/* .w3-container{
+    margin: 0;
+
+
+    montserrat ligth interlineado 17 tama;o 14 bajar en nuestros
+  } */
+
+@media only screen and (max-width: 1024px) {
+    img {
+        max-width: 80%;
+    }
+}
+
+@media only screen and (max-width: 415px) {
+    .textoProductosNegrita {
+        font-family: "Montserrat-SemiBold";
+        font-size: 12px;
+        // line-height: 2;
+    }
+    .textoProductos {
+        font-family: "Montserrat-Regular";
+        font-size: 12px;
+        margin: 0%;
+        // line-height: 2;
+    }
+    #parent {
+        margin-left: 5vh;
+        margin-right: 5vh;
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 3vh;
+    }
+    .titulocelu {
+        margin-top: 51px;
+    }
+    .tituloConocenos {
+        font-family: 'Montserrat-SemiBold';
+        font-size: 22px;
+        color: #665048;
+        margin-bottom: 0%;
+    }
+    .tituloDulce {
+        font-family: "Montserrat-SemiBold";
+        font-size: 38px;
+        color: rgb(87, 154, 160);
+        margin-bottom: 0%;
+    }
+    .tituloSalado {
+        font-family: 'Montserrat-SemiBold';
+        font-size: 38px;
+        color: rgb(179, 85, 42);
+        margin-bottom: 0%;
+    }
+    .tituloNaturales {
+        font-family: 'Montserrat-SemiBold';
+        font-size: 38px;
+        color: rgb(83, 105, 26);
+        margin-bottom: 0%;
+    }
+    .fondoMarron {
+        background-color: #472f24;
+        height: 0.5em;
+    }
+    .fondoAmarillo {
+        background-color: rgb(237, 209, 133);
+        height: 0.5em;
+    }
+    .fondoVerde {
+        background-color: rgb(182, 219, 189);
+        height: 0.5em;
+    }
+    img {
+        max-width: 100%;
+        margin-left: 12%;
+    }
+    .imagenes {
+        padding: 0%;
+        margin: 0%;
+    }
+    .derechaa {
+        margin-right: 0%;
+    }
+}
